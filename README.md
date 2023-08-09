@@ -2,8 +2,6 @@
 
 ## 🚩 Challenge 1: Simple NFT Deploy
 
-TBD переписать в концу что тут будет
-
 🎫 Mint simple NFT on TON . Let's look at smart contracts of the NFT standard in TON. Get information about the deployed collection in the TON network. And send a message to the collection and thus deploy the NFT
 
 🌟 The final deliverable will be NFT minted on the TON testnet.
@@ -12,7 +10,7 @@ TBD переписать в концу что тут будет
 
 ---
 
-# Checkpoint 0:  Install 
+# Checkpoint 0: 📦   Install 📚
 
 Required: 
 * [Git](https://git-scm.com/downloads)
@@ -31,7 +29,7 @@ yarn chain
 ```
 ---
 
-# Checkpoint 1: NFT Standart in TON
+# Checkpoint 1:  🎓 NFT Standart in TON ✒️
 
 So, non-fungible tokens are assets, each instance of which is unique (specific) and cannot be replaced by another similar asset. A non-fungible token is some kind of digital entity certificate with the ability to transfer the certificate through some mechanism.
 
@@ -46,7 +44,7 @@ I think that's enough theory, let's look at the code!
 
 ---
 
-# Checkpoint 2: Let's look at the contracts
+# Checkpoint 2: 👓 Let's look at the contracts 💫
 
 Open the contracts folder:
 
@@ -62,7 +60,7 @@ Get methods - methods that can return some information, for example, about the N
 
 ---
 
-# Checkpoint 3: Let's get information about the collection
+# Checkpoint 3: 📐 Let's get information about the collection 📏
 
 Ready to make a request to the testnet?!?
 
@@ -90,7 +88,7 @@ Result:
 
 ---
 
-# Checkpoint 4: Сollect the body of the message for NFT mint
+# Checkpoint 4:  💊 Сollect the body of the message for NFT mint 💾
 
 As mentioned above, smart contracts exchange messages, in order to mint the NFT, you need to send a message to the collection contract.
 You can put some paylod in the message - message body. Let's assemble the body for mint NFT. It looks like this:
@@ -105,7 +103,7 @@ P.S Assembly of the body is in the file `deployNFT.ts`
 
 ---
 
-# Checkpoint 5: Testnet Coins
+# Checkpoint 5: 💸  Testnet Coins 💰
 
 An attentive reader may have a question, who should send a message with the body we have collected to the smart contract of the collection. There are wallets for this, the wallet can receive external messages and send internal ones, so for mint nft we need a wallet.There are many different wallets in TON, but I suggest you use in TON Speedrun Tonkeeper.
 
@@ -117,7 +115,7 @@ Let's use the wallet by switching it to the test network and get coins in the te
 
 ---
 
-# Checkpoint 6: Mint NFT
+# Checkpoint 6: 📌 Mint NFT 📌 
 
 Ready to mint to the testnet?!?
 
@@ -131,7 +129,7 @@ Congratulations, you minted nft on the network TON!
 
 ---
 
-# Checkpoint 7: Check NFT
+# Checkpoint 7: 🎫 Check NFT 😀
 
 Let's check if you did everything right. Let's find your NFT in the blockchain explorer.
 
@@ -139,8 +137,7 @@ Take the address of our collection and open it in the explorer:
 
 https://testnet.explorer.tonnft.tools/collection/EQA0LSb2VEM-8i2PI1xu0mvluCOwyhUZfBUJaI9Zm2E1Yr3n
 
-Scroll down and find your NFT in the list:
-
+Scroll down and find your NFT in the list!
 
 
 ---
@@ -148,7 +145,19 @@ Scroll down and find your NFT in the list:
 
 # ⚔️ Side Quests
 
-TBD
+Quick results are great, but to play longer, enjoy the ecosystem, I suggest you the following tutorials:
+
+- Understand how to [compile](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/pipeline/simplesmartcontract.md) a smart contract
+- Learn to write [tests](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/pipeline/simpletest.md) for smart contracts
+- And of course, [deploy](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/pipeline/simpledeploy.md) your smart contract to the test network
+
+После этого предлагаю вам углубиться в язык для смарт-контрактов TON:
+
+ - https://github.com/romanovichim/TonFunClessons_Eng
+
+
+
+
 
 
  
