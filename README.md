@@ -151,7 +151,7 @@ Quick results are great, but to play longer, enjoy the ecosystem, I suggest you 
 - Learn to write [tests](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/pipeline/simpletest.md) for smart contracts
 - And of course, [deploy](https://github.com/romanovichim/TonFunClessons_Eng/blob/main/lessons/pipeline/simpledeploy.md) your smart contract to the test network
 
-После этого предлагаю вам углубиться в язык для смарт-контрактов TON:
+After that, I suggest you delve into the language for TON smart contracts:
 
  - https://github.com/romanovichim/TonFunClessons_Eng
 
