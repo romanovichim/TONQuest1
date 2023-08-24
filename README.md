@@ -25,7 +25,6 @@ git clone https://github.com/romanovichim/TONQuest1.git
 ```sh
 cd challenge-1
 yarn install
-yarn chain
 ```
 ---
 
@@ -50,7 +49,7 @@ Open the contracts folder:
 
 ![1](https://user-images.githubusercontent.com/18370291/253742060-80b76594-d28d-4289-8d00-6f5d13900912.PNG)
 
-Smart contracts in TON are usually written in FunC or Tact. In the folder, you can see the collection NFT smart contract and the NFT element smart contract written in the FunC language. The `imports` folder contains the helper code.
+Smart contracts in TON are usually written in [FunC](https://docs.ton.org/develop/func/overview) or [Tact](https://tact-lang.org/). In the folder, you can see the collection NFT smart contract and the NFT element smart contract written in the FunC language. The `imports` folder contains the helper code.
 
 In the next quests, we will learn how to deploy smart contracts, but in this case, I decided to help you and have already deposited the smart contract of the collection. By the way, you can see its code in the `nft-collection.fc` file.
 
@@ -91,11 +90,11 @@ Result:
 # Checkpoint 4:  💊 Сollect the body of the message for NFT mint 💾
 
 As mentioned above, smart contracts exchange messages, in order to mint the NFT, you need to send a message to the collection contract.
-You can put some paylod in the message - message body. Let's assemble the body for mint NFT. It looks like this:
+You can put some paylod in the message - message body. Let's assemble the body for mint NFT. Open `deployNft.ts` file. It looks like this:
 
 ![image](https://user-images.githubusercontent.com/18370291/253799227-a0b6c80e-9c4e-42e1-b2a6-5e8882294b17.png)
 
-The body of the message will be a cell - the data type of the TON network. The first thing we will put in the message will be the service parameters `op` and `query_id`, we will not dwell on them in this quest.
+The body of the message will be a [cell](https://docs.ton.org/learn/overviews/cells) - the data type of the TON network. The first thing we will put in the message will be the service parameters `op` and `query_id`, we will not dwell on them in this quest.
 
 Next is the index of our future NFT, a small number of coins and a cell with an address and, in fact, what will be stored inside the NFT. Since this is an example, we will simply store the json with our nft index.
 
@@ -105,13 +104,13 @@ P.S Assembly of the body is in the file `deployNFT.ts`
 
 # Checkpoint 5: 💸  Testnet Coins 💰
 
-An attentive reader may have a question, who should send a message with the body we have collected to the smart contract of the collection. There are wallets for this, the wallet can receive external messages and send internal ones, so for mint nft we need a wallet.There are many different wallets in TON, but I suggest you use in TON Speedrun Tonkeeper.
+An attentive reader may have a question, who should send a message with the body we have collected to the smart contract of the collection. There are wallets for this, the wallet can receive external messages and send internal ones, so for mint nft we need a wallet. There are many [different wallets](https://ton.org/wallets) in TON, but I suggest you use a [Tonkeeper](https://tonkeeper.com/).
 
 Let's use the wallet by switching it to the test network and get coins in the test network - we need them to send a message:
-1) Go to the settings and scroll to the very bottom until the inscription tonekeeper version 3.0 
+1) Go to the settings and scroll to the very bottom until the inscription "Tonkeeper version X" 
 2) Click 6 times in a row quickly on the Tonkeeper icon above the inscription - the menu for developers will open 
 3) select switch to the test network in it 
-4) to get to the wallet in the test network , test TON, you need to use the tap: https://t.me/testgiver_ton_bot
+4) to get to the wallet in the test network, test TON, you need to use the tap: https://t.me/testgiver_ton_bot
 
 ---
 
@@ -139,7 +138,9 @@ https://testnet.explorer.tonnft.tools/collection/EQA0LSb2VEM-8i2PI1xu0mvluCOwyhU
 
 Scroll down and find your NFT in the list!
 
-P.S Since this is an example, the link in the content of NFT is not working, but when you create your projects, you can sew up any links you want
+Since this is an example, the link in the content of NFT is not working, but when you create your projects, you can sew up any links you want.
+
+P.S. If you want to see an NFT in your wallet, don't forget to change owner address in `deployNft.ts` file!
 
 ---
 
