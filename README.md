@@ -139,6 +139,7 @@ https://testnet.explorer.tonnft.tools/collection/EQA0LSb2VEM-8i2PI1xu0mvluCOwyhU
 
 Scroll down and find your NFT in the list!
 
+P.S Since this is an example, the link in the content of NFT is not working, but when you create your projects, you can sew up any links you want
 
 ---
 
