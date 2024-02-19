@@ -75,7 +75,7 @@ yarn getcol
 
 Result:
 
-![image](https://user-images.githubusercontent.com/18370291/253798138-4fdaf625-daf9-4e53-aff3-9410d747892a.png)
+![image](https://i.imgur.com/1Goq23y.png)
 
 `get_collection_data` mandatory NFT standard method, this method returns:
 
@@ -92,11 +92,11 @@ Result:
 As mentioned above, smart contracts exchange messages, in order to mint the NFT, you need to send a message to the collection contract.
 You can put some paylod in the message - message body. Let's assemble the body for mint NFT. Open `deployNft.ts` file. It looks like this:
 
-![image](https://user-images.githubusercontent.com/18370291/253799227-a0b6c80e-9c4e-42e1-b2a6-5e8882294b17.png)
+![image](https://i.imgur.com/W3B5ppj.png)
 
 The body of the message will be a [cell](https://docs.ton.org/learn/overviews/cells) - the data type of the TON network. The first thing we will put in the message will be the service parameters `op` and `query_id`, we will not dwell on them in this quest.
 
-Next is the index of our future NFT, a small number of coins and a cell with an address and, in fact, what will be stored inside the NFT. Since this is an example, we will simply store the json with our nft index.
+Next is the index of our future NFT, a small number of coins and a cell with an address and, in fact, what will be stored inside the NFT. Since this is an example, we will simply use the `item.json` as a NFT item content.
 
 P.S Assembly of the body is in the file `deployNFT.ts`
 
@@ -134,7 +134,7 @@ Let's check if you did everything right. Let's find your NFT in the blockchain e
 
 Take the address of our collection and open it in the explorer:
 
-https://testnet.explorer.tonnft.tools/collection/EQA0LSb2VEM-8i2PI1xu0mvluCOwyhUZfBUJaI9Zm2E1Yr3n
+https://testnet.explorer.tonnft.tools/collection/EQDf6HCOggN_ZGL6YsYleN6mDiclQ_NJOMY-x8G5cTRDOBW4
 
 Scroll down and find your NFT in the list!
 

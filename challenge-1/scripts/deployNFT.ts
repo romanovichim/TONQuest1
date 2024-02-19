@@ -21,7 +21,7 @@ async function deployItem() {
     const itemIndex = await getNextItem();
 
     // no image just json
-    const commonContentUrl = itemIndex.toString() + ".json";
+    const commonContentUrl = "item.json";
 
     /////////////////////////////////////// Body generation ////////////////////////////////////////////
 
@@ -52,7 +52,7 @@ async function deployItem() {
 
 	console.log("Scan QR code below with your Tonkeeper Wallet")
 
-    const collectionAddress = Address.parse('EQA0LSb2VEM-8i2PI1xu0mvluCOwyhUZfBUJaI9Zm2E1Yr3n');
+    const collectionAddress = Address.parse('EQDf6HCOggN_ZGL6YsYleN6mDiclQ_NJOMY-x8G5cTRDOBW4');
 
     let deployLink =
     'https://app.tonkeeper.com/transfer/' +
