@@ -62,7 +62,7 @@ async function deployItem() {
     "?" +
     qs.stringify({
         text: "tonspeedrun",
-        amount: toNano("0.5").toString(10),
+        amount: toNano("0.1").toString(10),
         bin: readyBody.toBoc({idx: false}).toString("base64"),
     });
 
