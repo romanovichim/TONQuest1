@@ -128,7 +128,7 @@ Congratulations, you minted nft on the network TON!
 
 
 ## Mainnet 
-If you want to mint your NFT on mainnet (for example, so that it is displayed in the society.ton.org profile). Follow these steps:
+If you want to mint your NFT on mainnet (for example, so that it is displayed in the [society.ton.org](https://society.ton.org) profile). Follow these steps:
 1. Open `scripts/utils.ts` file and delete `testnet.` part from toncenter endpoint url. After that it should look like this:
 ```typescript
 export const toncenter = new TonClient({
@@ -147,7 +147,7 @@ Let's check if you did everything right. Let's find your NFT in the blockchain e
 
 Take the address of our collection and open it in the explorer:
 
-https://testnet.explorer.tonnft.tools/collection/EQDf6HCOggN_ZGL6YsYleN6mDiclQ_NJOMY-x8G5cTRDOBW4
+https://testnet.explorer.tonnft.tools/collection/EQDf6HCOggN_ZGL6YsYleN6mDiclQ_NJOMY-x8G5cTRDOBW4 (or [here](https://explorer.tonnft.tools/collection/EQDf6HCOggN_ZGL6YsYleN6mDiclQ_NJOMY-x8G5cTRDOBW4) for the mainnet)
 
 Scroll down and find your NFT in the list!
 
