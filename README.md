@@ -126,6 +126,19 @@ On the screen you will see a QR code, scan it and confirm the transaction in the
 
 Congratulations, you minted nft on the network TON!
 
+
+## Mainnet 
+If you want to mint your NFT on mainnet (for example, so that it is displayed in the society.ton.org profile). Follow these steps:
+1. Open `scripts/utils.ts` file and delete `testnet.` part from toncenter endpoint url. After that it should look like this:
+```typescript
+export const toncenter = new TonClient({
+	endpoint: 'https://toncenter.com/api/v2/jsonRPC',
+});
+```
+2. Use your mainnet wallet to scan this qr-code.
+
+P.S. and don't forget to change the address in `script/deployNFT.ts` to your address =)
+
 ---
 
 # Checkpoint 7: 🎫 Check NFT 😀
