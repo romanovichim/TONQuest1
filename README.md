@@ -106,11 +106,14 @@ P.S Assembly of the body is in the file `deployNFT.ts`
 
 An attentive reader may have a question, who should send a message with the body we have collected to the smart contract of the collection. There are wallets for this, the wallet can receive external messages and send internal ones, so for mint nft we need a wallet. There are many [different wallets](https://ton.org/wallets) in TON, but I suggest you use a [Tonkeeper](https://tonkeeper.com/).
 
+See [this instuctions](https://tonkeeper.helpscoutdocs.com/article/100-how-switch-to-the-testnet) or read bellow
+
 Let's use the wallet by switching it to the test network and get coins in the test network - we need them to send a message:
 1) Go to the settings and scroll to the very bottom until the inscription "Tonkeeper version X" 
 2) Click 6 times in a row quickly on the Tonkeeper icon above the inscription - the menu for developers will open 
-3) select switch to the test network in it 
-4) to get to the wallet in the test network, test TON, you need to use the tap: https://t.me/testgiver_ton_bot
+3) Enable Dev Mode
+4) Afterward, go to the main page, click the "Add Wallet" button, and select "Testnet Account." Then, enter your seed phrase to authenticate in the wallet.
+5) to get to the wallet in the test network, test TON, you need to use the tap: https://t.me/testgiver_ton_bot
 
 ---
 
